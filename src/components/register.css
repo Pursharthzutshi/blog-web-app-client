@@ -1,0 +1,43 @@
+.register-button-div,.register-form{
+    display: flex;
+}
+
+.register-button-div{
+    flex-direction: row;
+}
+
+.register-form{
+    flex-direction:column;
+}
+
+button{
+    border-radius: 4px;
+    color: white;
+    box-shadow: .2px .2px 3px .2px rgb(0, 145, 138);
+    font-size: .9rem;
+    border: none;
+    padding:5px 18px 5px 18px;
+    background: linear-gradient(to left,rgb(0, 145, 138),rgb(0, 144, 141));
+}
+
+button:hover{
+    transition: .2s;
+    cursor: pointer;
+    background: white;
+    color: rgb(0, 145, 138);
+}
+
+input{
+    padding: 4px 2px 6px 8px;
+    width: 40%;
+    font-family: "Ubuntu";
+    color: rgb(0, 114, 109);
+    box-shadow: .2px .2px 4px .2px lightgray;
+}
+
+
+input:focus{
+    transition: .2s;
+    box-shadow: none;
+}
+

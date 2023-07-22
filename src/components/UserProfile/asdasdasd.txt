@@ -1,0 +1,130 @@
+{
+                userProfileInfo.map((val)=>{
+
+
+                   return <div>
+                    <div className="blog-boxes">
+                    <h3>{val.title}</h3>
+                    <p>{val.topic}</p>
+                    <p className="author-name">By {val.author}</p>
+                    <p>{val.content.substr(0,200)}...</p>
+                    <Link to="/blog">
+<button onClick={()=>{showBlogContent(val._id)}}>View Blog</button>
+<br></br>
+<br></br>
+
+</Link>
+
+<button to="/updateYourBlogPage" onClick={()=>{updateBlogContent(val._id)}}>Update Your Blog</button>
+
+{
+    showUpdateBlogPage
+    &&
+    <section className="update-blog-page-section">
+    <UpdateYourBlogPage setShowUpdateBlogPage={setShowUpdateBlogPage} updateBlogId={updateBlogId}/>
+    </section>
+}
+
+<br></br>
+{
+    deleteUserDialogBoxBackgroundDiv &&
+    <div className="delete-user-dialog-box-background-div">
+{
+    
+deleteUserDialogBox && 
+<div className="delete-dialog-box">
+    <h3>Are you sure you want to delete this blog</h3>
+    <div className="delete-dialog-box-buttons-container">
+        <button  onClick={()=>{DeleteUserBlog(val._id)}}>Yes</button>
+        <button className="no-button" onClick={hideUserDeleteDialogBox}>No</button>
+</div>
+</div>
+}
+
+</div>
+
+}
+
+<button className="delete-your-blog-button" onClick={showDeleteUserDialogBlog}>Delete Your Blog</button>
+
+<div className="blog-button-container">
+<p></p>
+
+
+</div>
+                    </div>
+                    
+                </div>
+                })
+                  
+            }
+
+
+            {
+                userProfileInfo.filter((val)=>{
+                   if(val._id){
+                       setShowUpdateBlogPage(true)
+                   }else{
+                       setShowUpdateBlogPage(false)
+                       
+                   }
+               }).map((val)=>{
+                   
+               
+                   return <div>
+                   <div className="blog-boxes">
+                   <h3>{val.title}</h3>
+                   <p>{val.topic}</p>
+                   <p className="author-name">By {val.author}</p>
+                   <p>{val.content.substr(0,200)}...</p>
+                   <Link to="/blog">
+               <button onClick={()=>{showBlogContent(val._id)}}>View Blog</button>
+               <br></br>
+               <br></br>
+               
+               </Link>
+               
+               <button to="/updateYourBlogPage" onClick={()=>{updateBlogContent(val._id)}}>Update Your Blog</button>
+               
+               {
+               showUpdateBlogPage
+               &&
+               <section className="update-blog-page-section">
+               <UpdateYourBlogPage setShowUpdateBlogPage={setShowUpdateBlogPage} updateBlogId={updateBlogId}/>
+               </section>
+               }
+               
+               <br></br>
+               {
+               deleteUserDialogBoxBackgroundDiv &&
+               <div className="delete-user-dialog-box-background-div">
+               {
+               
+               deleteUserDialogBox && 
+               <div className="delete-dialog-box">
+               <h3>Are you sure you want to delete this blog</h3>
+               <div className="delete-dialog-box-buttons-container">
+               <button  onClick={()=>{DeleteUserBlog(val._id)}}>Yes</button>
+               <button className="no-button" onClick={hideUserDeleteDialogBox}>No</button>
+               </div>
+               </div>
+               }
+               
+               </div>
+               
+               }
+               
+               <button className="delete-your-blog-button" onClick={showDeleteUserDialogBlog}>Delete Your Blog</button>
+               
+               <div className="blog-button-container">
+               <p></p>
+               
+               
+               </div>
+                   </div>
+                   
+               </div>
+               })
+               
+                           }
+                           

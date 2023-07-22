@@ -1,0 +1,112 @@
+@media only screen and (max-width:700px){
+    .right-side{
+        visibility: hidden;
+        background:yellow;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 80%;
+        top:50%;
+        width: 20%;
+        height: 70%;
+        border-radius: 2px;
+        box-shadow: .2px .2px 10px .2px whitesmoke;
+        color: rgb(0, 86, 82);
+    }
+    
+   .filter-button{
+        visibility: visible;
+        position: fixed;
+        top:90%;
+    }
+
+    .filter-dialog-box{
+        position: fixed;
+        top: 20%;
+        left: 20%;
+        visibility: visible;
+        box-shadow: .2px .2px 12px .2px rgb(184, 184, 184);
+        background: white;
+        color: rgb(0, 86, 82);
+        width: 20rem;
+        height: 20rem;
+        border-radius: 8px;
+    }
+
+    .filter-dialog-box input{
+        margin: 20px 2px 2px 25px;
+        box-shadow: none;
+    }
+    .filter-apply-button{
+        margin-top: 40px;
+    }
+
+    .search-blog-input-div input{
+        padding:6px 2px 6px 12px;
+        width: 50%;
+        word-spacing: 1px;
+        border-radius: 4px;
+    }
+
+    header {
+        border-radius: 20px;
+        height: 12vh;
+        margin-left: 6px;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    header h2{
+        margin-top: -8px;
+    }
+    @media only screen and (max-width:480px){
+
+        /* .home-page{
+            overflow-x: hidden;
+        } */
+
+        .blog-boxes{
+            margin-left: 60px;
+            width: 15rem;
+        }
+
+        .blog-boxes p{
+            font-size: .8rem;
+        }
+
+        .header-heading-div h2{
+            font-size: 1rem;
+            margin-top: -10px;
+            width: 100%;
+            height: 2rem;
+        }
+
+        .filter-button{
+            left: 82%;
+            top:80%;
+            font-size: .8rem;
+        }
+        .filter-dialog-box{
+            position: fixed;
+            top: 30%;
+            left: 12%;
+            visibility: visible;
+            box-shadow: .2px .2px 12px .2px rgb(184, 184, 184);
+            background: white;
+            color: rgb(0, 86, 82);
+            width: 20rem;
+            height: 20rem;
+            border-radius: 8px;
+        }
+    
+    
+        .blog-button-container button{
+            font-size: .7rem;
+        }
+    }
+    @media only screen and (max-width:380px){
+    .filter-dialog-box{
+        width: 18rem;
+    }
+    }
+}

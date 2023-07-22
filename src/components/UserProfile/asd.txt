@@ -1,0 +1,11 @@
+.delete-your-blog-button{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: .9rem;
+    color:white;
+    /* background: linear-gradient(to left,rgb(93, 1, 1),rgb(97, 1, 1)); */
+    background: linear-gradient(to left,rgb(170, 11, 0),rgba(177, 0, 0, 0.849));
+    border: 1px solid #930000;
+    box-shadow: none;
+}

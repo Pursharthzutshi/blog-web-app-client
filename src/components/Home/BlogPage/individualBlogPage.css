@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    padding:2px 22px 2px 12px;
+}
+
+.blog-page-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.blog-page-container{
+    padding: 2px 12px 2px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.blog-page-container h2{
+    text-align: start;
+
+}
+
+.blog-page-container p{
+    line-height: 32px;
+    margin-top: 30px;
+    font-size: 1rem;
+    text-align: center;
+    line-height:44px;
+    
+}
+
+.blog-page-container img{
+    width: 30%;
+    height: auto;
+    box-shadow: .2px .2px 22px .2px lightgray;
+}
+
+.blog-page-container span{
+    letter-spacing: 2px;
+    text-align: start;
+    margin-top: -5px;
+    color: rgb(59, 59, 59);
+    letter-spacing: 2px;
+    font-family: 'Ubuntu';
+}

@@ -1,0 +1,23 @@
+.register-form{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.login-section .register-button-div{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.login-section .form-container{
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section .form-container input{
+    width: 20%;
+}

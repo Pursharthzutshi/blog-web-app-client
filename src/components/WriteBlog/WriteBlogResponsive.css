@@ -1,0 +1,29 @@
+@media only screen and (max-width:700px){
+
+    
+    .write-blog-bg-image-div{
+        height: 12rem;
+        clip-path: none;
+    }
+
+    .write-blog-section{
+        overflow-x:hidden ;
+    }
+    
+    .write-blog-container input{
+        width: 92%;
+    }
+    .write-blog-container textarea::placeholder{
+        font-size: .9rem;
+    }
+
+    select{
+        font-size: .8rem;
+    }
+
+    @media only screen and (max-width:200px){
+    .write-blog-section{
+        overflow-x: hidden;
+    }
+    }
+}

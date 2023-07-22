@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,body{
+    font-family: "Montserrat";
+    height: 100%;   
+}
+
+
+.top-bar-blog-post-container{
+    width: 100%;
+}
+
+header{
+    box-shadow: .2px .2px 22px .2px whitesmoke;
+    height:17vh;
+    background-position:center;
+    margin:20px 0px 0px -20px;
+    margin-top: 18px;
+    width: 102.7%;
+}
+
+header h2{
+    padding-top:40px ;
+    animation:headerTextEffect 3s infinite;
+    color: black;
+}
+
+
+@keyframes headerTextEffect{
+    0%{
+        color: rgb(1, 93, 88);
+    }
+
+    100%{
+
+        color: rgb(2, 193, 183);
+    }
+}
+
+.home-page-boxes-blog-container{
+    flex-wrap: wrap;
+    gap:30px;
+    margin-left: -40px;
+    justify-content: center;
+}
+
+.blog-boxes{
+    padding: 2px 15px 32px 22px;
+    flex-wrap: wrap;
+    width: 18rem;
+    box-shadow: .2px .2px 2px .2px lightgray;
+    margin-top: 40px;
+    border: 2px dotted white;
+    background: rgb(255, 255, 255);
+}
+
+.blog-boxes p{
+    margin-left: -9px;
+    line-height: 28px;
+    font-size: .85rem;
+}
+
+.blog-boxes img{
+    margin-top: -4px;
+    width: 100%;
+    height: auto;
+}
+
+.blog-boxes:hover{
+    transition: .2s;
+}
+
+.blog-button-container button{
+    background: linear-gradient(to left,rgb(0, 150, 148),rgb(0, 134, 141));
+    color:white;
+    font-size: .9rem;
+    padding:6px 12px 6px 12px;
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+.blog-button-container button:hover{
+    transition: .2s;
+    color: rgb(0, 60, 52);
+    cursor: pointer;
+    background: linear-gradient(to left,rgb(2, 193, 183),rgb(1, 205, 202));
+    border: 2px dotted rgb(1, 97, 57);
+}
+
+.blog-right-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.home-page-boxes-blog-container{
+    width: 80%;
+}
+
+.categories-checkbox-container{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    background: white;
+}
+
+.categories-checkbox-container label{
+    margin-top: -27px;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 80%;
+    top:40%;
+    margin-top: 20px;
+    width: 20%;
+    height: 70%;
+    gap:10px;
+    border-radius: 2px;
+    box-shadow: .2px .2px 10px .2px whitesmoke;
+    background: white;
+    color: rgb(0, 86, 82);
+}
+
+.right-side h3{
+    text-decoration: underline;
+}
+
+.right-side input{
+    margin-top: 3px;
+    box-shadow: none;
+}
+
+.right-side label{
+    font-family: "Roboto";
+}
+
+.home-page{
+    display: flex;
+}
+
+.blog-box-container{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    flex-wrap: wrap;
+    margin-left: 80px;
+
+}
+
+.search-blog-input-div input{
+    padding:6px 2px 6px 12px;
+    width: 20%;
+    word-spacing: 1px;
+    border-radius: 4px;
+}
+
+.search-blog-input-div input::placeholder{
+    font-family: "Ubuntu";
+    font-size: .8rem;
+}
+
+.author-name{
+    font-family: "Poppins";
+    color:white;
+    border-radius: 2px;
+    box-shadow: .2px .2px 3px .2px rgb(0, 113, 107);
+    background:  rgb(0, 115, 109);
+}
+.filter-dialog-box{
+    visibility: hidden;
+}
+
+
+ .filter-button{
+    visibility: hidden;
+}
+

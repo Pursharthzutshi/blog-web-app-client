@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.navbar-container,.nav-bar-links-container{
+    display: flex;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar{
+    background: rgb(0, 185, 182);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 123, 105);
+}
+
+.home-page-boxes-blog-container,.blog-boxes{
+    display: flex;
+}
+.home-page-boxes-blog-container{
+    flex-direction: row;
+}
+
+.blog-boxes{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-bar-links-container{
+    background: red;
+    width: 100%;
+    height: 2rem;
+    font-family: "Ubuntu";
+}
+
+.nav-bar-links{
+    font-family: "Roboto";
+    font-size: .92rem;
+    padding: 6px 12px 7px 12px;
+    margin-left: 20px;
+    color:white;
+    text-decoration: none;
+    background: linear-gradient(to left,rgb(0, 150, 148),rgb(0, 134, 141));
+    width: 100%;
+    height: 2rem;
+}
+
+.res-nav-bar-links{
+    visibility: hidden;
+}
+
+.nav-bar-links:hover{
+    border:2px dotted  rgb(0, 68, 66);
+    background: rgb(0, 68, 66);
+    transition: .2s;
+}
+
+.logo-div{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    gap:20px;
+}
+
+.logo-div h3{
+    color:rgb(0, 150, 148);
+}
+
+.logo-image{
+    width: 4rem;
+    height: auto;
+}
+
+
+.welcome-back-msg{
+    width: 20%;
+    border-radius: 8px;
+    color:rgb(0, 150, 148);
+    padding: 12px 2px 12px 2px;
+}
+

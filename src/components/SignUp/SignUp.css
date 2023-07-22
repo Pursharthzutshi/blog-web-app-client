@@ -1,0 +1,84 @@
+html,body{
+    height: 100%;
+}
+
+.register-form-container{
+    display: flex;
+}
+
+.register-form-container{
+    flex-direction: row;
+}
+
+.sign-up-section .register-button-div{
+    width: 40%;
+    justify-content: center;
+}
+
+.register-form-container{
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    box-shadow: .2px .2px 4px .2px rgb(0, 114, 109);
+    background:linear-gradient(to left,rgba(0, 114, 108, 0.826),rgba(0, 131, 129, 0.848)), url("images/pexels-pixabay-267569.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 35%;
+    height:60vh;
+    margin:30px 2px 2px -25px;
+    color: white;
+    border-radius: 4px;
+    padding:2px 12px 2px 12px;
+}
+.form-container h3{
+    color: rgb(2, 129, 129);
+}
+
+.container .sign-up-icon{
+    width: 4rem;
+    height: auto;
+    padding:8px 12px 6px 12px;
+    border-radius: 8px;
+    background: rgb(2, 129, 129);
+}
+
+.container h2{
+    margin-top: 60px;
+}
+
+.container p{
+    line-height: 42px;
+    margin-top: 20px;
+}
+
+.sign-up-section .register-form-container .form-container{
+    width: 50%;
+    margin:70px 2px 2px -42px;
+}
+
+.register-form{
+    gap:20px;
+}
+
+.sign-up-error-message,.signed-up-msg{
+    letter-spacing: 1px;
+    padding:8px 22px 8px 22px;
+    font-size: 1rem;
+    font-family: "Montserrat";
+}
+
+.sign-up-error-message{
+    color:rgb(255, 0, 0);
+    background: rgba(234, 78, 0, 0.329);
+}
+
+.signed-up-msg{
+    color:rgb(0, 74, 52);
+    background: rgba(0, 144, 134, 0.384);
+}
+
