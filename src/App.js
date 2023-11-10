@@ -51,7 +51,7 @@ function App() {
 
 
   const logOut = ()=>{
-    axios.get(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/logout`).then((response)=>{
+    axios.get(`https://blog-web-app-server-mrefdn9kr-pursharthzutshi.vercel.app/logout`).then((response)=>{
       // setRedirectToMainPage(true)
 
       console.log(response);
@@ -74,7 +74,7 @@ function App() {
     
   useEffect(()=>{
         // localStorage.setItem("showLogOut",true)
-    axios.get(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/logInUsers`).then((res)=>{
+    axios.get(`https://blog-web-app-server-mrefdn9kr-pursharthzutshi.vercel.app/logInUsers`).then((res)=>{
       console.log(res)
         if(res.data.loggedIn === true){
             setShowLogInStatus(res.data.user[0].name)
@@ -91,7 +91,7 @@ function App() {
 
 const showBlogContent = (individualBlogPostId) =>{
   console.log(individualBlogPostId)
-  axios.get(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/fetch/${individualBlogPostId}`).then((res)=>{
+  axios.get(`https://blog-web-app-server-mrefdn9kr-pursharthzutshi.vercel.app/fetch/${individualBlogPostId}`).then((res)=>{
    
         setShowBlogData(res.data)
         setBlogNo(individualBlogPostId)
