@@ -37,7 +37,7 @@ function Home({blogNo,setsBlogNo,showWelcomeBackMsg,showLogInStatus,showBlogData
 
 
    useEffect(()=>{
-    axios.get(`http://localhost:3001/fetch`).then((res)=>{
+    axios.get(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/fetch`).then((res)=>{
         setShowBlogData(res.data.data)
         console.log(res.data.data)
     })

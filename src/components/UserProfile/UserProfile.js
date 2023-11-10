@@ -35,7 +35,7 @@ function UserProfile({loggedInEmailId,showBlogContent}){
     },[loggedInEmailId])
 
     const DeleteUserBlog = (id) =>{
-        axios.delete(`http://localhost:3001/deleteUserBlog/${id}`).then((res)=>{
+        axios.delete(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/deleteUserBlog/${id}`).then((res)=>{
             console.log(res)
         })
         setDeleteUserDialogBoxBackgroundDiv(false)
@@ -62,7 +62,7 @@ function UserProfile({loggedInEmailId,showBlogContent}){
 
     useEffect(()=>{
         console.log(loggedInEmailId)
-        axios.post(`http://localhost:3001/fetchUserBlogsInfo`,{loggedInEmailId:loggedInEmailId}).then((res)=>{
+        axios.post(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/fetchUserBlogsInfo`,{loggedInEmailId:loggedInEmailId}).then((res)=>{
             console.log(res);
             setUserBlogsInfo(res.data)
         })

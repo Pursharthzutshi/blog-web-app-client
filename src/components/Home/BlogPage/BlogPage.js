@@ -19,7 +19,7 @@ function BlogPage({blogNo}){
 
     useEffect(()=>{
         console.log(blogNo)
-        axios.get(`http://localhost:3001/fetch/${blogNo}`).then((res)=>{
+        axios.get(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/fetch/${blogNo}`).then((res)=>{
             console.log(res.data);
             setShowIndividualBlogData(res.data)
         })

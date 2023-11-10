@@ -23,7 +23,7 @@ function WriteBlog({showLogInStatus,loggedInEmailId}){
 
  const sendBlogData = () =>{
     console.log(loggedInEmailId)
-    axios.post(`http://localhost:3001/writeBlogData`,{loggedInEmailId:loggedInEmailId,title:title,topic:topic,content:content,showLogInStatus:showLogInStatus}).then((res)=>{
+    axios.post(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/writeBlogData`,{loggedInEmailId:loggedInEmailId,title:title,topic:topic,content:content,showLogInStatus:showLogInStatus}).then((res)=>{
         console.log(res);
         if(res.data.ErrorMsg){
             setShowErrorMsg(res.data.ErrorMsg)
