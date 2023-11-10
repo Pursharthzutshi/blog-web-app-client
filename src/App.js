@@ -38,6 +38,8 @@ function App() {
   const [signUpErrorMsg,setSignUpErrorMsg] = useState(true)
 
 
+  axios.defaults.withCredentials = true
+    
   // useEffect(()=>{
   //   if(loggedInEmailId){
   //   }
@@ -70,8 +72,6 @@ function App() {
     setShowNavigationMenu(false)
   }
   
-  axios.defaults.withCredentials = true
-    
   useEffect(()=>{
         // localStorage.setItem("showLogOut",true)
     axios.get(`https://blog-web-app-server-mrefdn9kr-pursharthzutshi.vercel.app/logInUsers`).then((res)=>{

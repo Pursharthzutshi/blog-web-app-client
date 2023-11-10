@@ -10,7 +10,8 @@ function UpdateYourBlogPage({updateBlogId,setShowUpdateBlogPage}){
     const [updateMessage,setUpdateMessage] = useState("")
 
     const [updateMessageStatus,setUpdateMessageStatus] = useState(false)
-    
+    axios.defaults.withCredentials = true;
+
     useEffect(()=>{
         setTimeout(()=>{
             setUpdateMessageStatus(false)

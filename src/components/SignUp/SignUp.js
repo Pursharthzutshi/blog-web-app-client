@@ -16,6 +16,7 @@ function SignUp({signUpErrorMsg,setSignUpErrorMsg}){
     const [showSignUpStatus,setShowSignUpStatus] = useState("");
 
     const [redirectHomePage,setRedirectHomePage] = useState(false)
+    axios.defaults.withCredentials = true;
 
     const sendSignUpDetails = () =>{
         axios.post("https://blog-web-app-server-mrefdn9kr-pursharthzutshi.vercel.app/SignUpDataInsert",{name:name,email:email,password:password,reCheckPassword:reCheckPassword}).then((response)=>{

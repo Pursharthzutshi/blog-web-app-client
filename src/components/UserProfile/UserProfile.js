@@ -17,6 +17,7 @@ function UserProfile({loggedInEmailId,showBlogContent}){
     const [deleteUserDialogBoxBackgroundDiv,setDeleteUserDialogBoxBackgroundDiv] = useState(false)
 
     const [deleteUserDialogBox,setDeleteUserDialogBox] = useState(false)
+    axios.defaults.withCredentials = true;
 
     const showDeleteUserDialogBlog = () =>{
         setDeleteUserDialogBoxBackgroundDiv(true)

@@ -16,6 +16,7 @@ function BlogPage({blogNo}){
     //     console.log(blogNoId)
 
     // },[blogNoId])
+    axios.defaults.withCredentials = true;
 
     useEffect(()=>{
         console.log(blogNo)

@@ -14,6 +14,7 @@ function WriteBlog({showLogInStatus,loggedInEmailId}){
     const [navToHomePage,setNavToHomePage] = useState("");
 
     const [showErrorMsg,setShowErrorMsg] = useState("")
+    axios.defaults.withCredentials = true;
 
     useEffect(()=>{
         console.log(loggedInEmailId)

@@ -16,6 +16,8 @@ function LogIn({showLogInStatus,setLogOutButton,setShowWelcomeBackMsg,loggedInEm
 
     const [logInStatus,setLogInStatus] = useState("");
 
+    axios.defaults.withCredentials = true;
+
     const logInUsers = ()=>{
         axios.post(`https://blog-web-app-server-mrefdn9kr-pursharthzutshi.vercel.app/logInUsers`,{email:email,password:password}).then((response)=>{                    
         if(response.data.message){

@@ -14,6 +14,7 @@ function Home({blogNo,setsBlogNo,showWelcomeBackMsg,showLogInStatus,showBlogData
     const [showAllBlogContent,setShowAllBlogContent] = useState(true);
 
     const [showFilterBox,setShowFilterBox] = useState(false);
+    axios.defaults.withCredentials = true;
 
     const showFilterDialogBox = () =>{
         setShowFilterBox(true);
