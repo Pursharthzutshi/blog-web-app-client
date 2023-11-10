@@ -74,7 +74,11 @@ function App() {
   
   useEffect(()=>{
         // localStorage.setItem("showLogOut",true)
-    axios.get(`https://blog-web-app-server-rho.vercel.app/logInUsers`).then((res)=>{
+    axios.get(`https://blog-web-app-server-rho.vercel.app/logInUsers`,
+    {
+      withCredentials: true,
+    }
+  ).then((res)=>{
       console.log(res)
         if(res.data.loggedIn === true){
             setShowLogInStatus(res.data.user[0].name)
