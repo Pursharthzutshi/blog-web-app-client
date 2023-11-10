@@ -20,7 +20,7 @@ function BlogPage({blogNo}){
 
     useEffect(()=>{
         console.log(blogNo)
-        axios.get(`https://blog-web-app-server-mrefdn9kr-pursharthzutshi.vercel.app/fetch/${blogNo}`).then((res)=>{
+        axios.get(`https://blog-web-app-server-rho.vercel.app/fetch/${blogNo}`).then((res)=>{
             console.log(res.data);
             setShowIndividualBlogData(res.data)
         })

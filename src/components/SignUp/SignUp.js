@@ -19,7 +19,7 @@ function SignUp({signUpErrorMsg,setSignUpErrorMsg}){
     axios.defaults.withCredentials = true;
 
     const sendSignUpDetails = () =>{
-        axios.post("https://blog-web-app-server-mrefdn9kr-pursharthzutshi.vercel.app/SignUpDataInsert",{name:name,email:email,password:password,reCheckPassword:reCheckPassword}).then((response)=>{
+        axios.post("https://blog-web-app-server-rho.vercel.app/SignUpDataInsert",{name:name,email:email,password:password,reCheckPassword:reCheckPassword}).then((response)=>{
         console.log(name)  
         if(response.data.message){
                 console.log(response)

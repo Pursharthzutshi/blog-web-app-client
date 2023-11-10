@@ -20,7 +20,7 @@ function UpdateYourBlogPage({updateBlogId,setShowUpdateBlogPage}){
 
     const updateBlogTitle = () =>{
         console.log(updateBlogId) 
-        axios.put(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/updateBlogTitle/${updateBlogId}`,{updatedBlogTitle:updatedBlogTitle}).then((res)=>{
+        axios.put(`https://blog-web-app-server-rho.vercel.app/updateBlogTitle/${updateBlogId}`,{updatedBlogTitle:updatedBlogTitle}).then((res)=>{
      console.log(res.data)
      setUpdateMessage(res.data)
      setUpdateMessageStatus(true)
@@ -28,14 +28,14 @@ function UpdateYourBlogPage({updateBlogId,setShowUpdateBlogPage}){
     }
 
     const updateBlogTopic = () =>{
-        axios.put(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/updateBlogTopic/${updateBlogId}`,{updatedBlogTopic:updatedBlogTopic}).then((res)=>{
+        axios.put(`https://blog-web-app-server-rho.vercel.app/updateBlogTopic/${updateBlogId}`,{updatedBlogTopic:updatedBlogTopic}).then((res)=>{
            console.log(res) 
            setUpdateMessage(res.data)
            setUpdateMessageStatus(true)
         })   
        }
        const updateBlogContent = () =>{
-        axios.put(`https://blog-web-app-server-53zmzhdnb-pursharthzutshi.vercel.app/updateBlogContent/${updateBlogId}`,{updatedBlogContent:updatedBlogContent}).then((res)=>{
+        axios.put(`https://blog-web-app-server-rho.vercel.app/updateBlogContent/${updateBlogId}`,{updatedBlogContent:updatedBlogContent}).then((res)=>{
            console.log(res)
            setUpdateMessage(res.data)
            setUpdateMessageStatus(true)
